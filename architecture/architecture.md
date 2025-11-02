@@ -28,7 +28,7 @@ have been developed to take advantage of other existing products (like Multichar
 
 ## Design
 
-![screenshot](image/bit-fever.png)
+![screenshot](image/tradalia.png)
 
 ![screenshot](image/components.png)
 
