@@ -14,18 +14,18 @@ podman compose up -d
 
 ## Importing the realm
 
-Go to: https://bitfever-server:8443/auth and login using the default credentials:
+Go to: https://tradalia-server:8443/auth and login using the default credentials:
 - Username: `keycloak-admin`
 - Password: `key!cloak.2K`
 
-Click the `Keycloak` dropdown and select `Create realm`. Click `Browse` and upload the `bitfever-realm.json` inside the
-`identity-provider` folder. Now, clicking `Create` the `bitfever` realm will be created.
+Click the `Keycloak` dropdown and select `Create realm`. Click `Browse` and upload the `tradalia-realm.json` inside the
+`identity-provider` folder. Now, clicking `Create` the `tradalia` realm will be created.
 
 ## Configuring users
 
 ### Creating a normal user
 
-After login, select the `bitfever` realm. We need to create an admin user (`admin`) and a generic user
+After login, select the `tradalia` realm. We need to create an admin user (`admin`) and a generic user
 (`user`). Click `Users` on the left and then the `Create new user` button. Use the following settings:
 
 - Email verified = yes
