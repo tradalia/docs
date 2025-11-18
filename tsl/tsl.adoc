@@ -46,9 +46,24 @@ Andrea Carboni (andrea.carboni71@gmail.com)
 |This is an alias for a string type and defines an error condition
 |===
 
+Examples:
+
+[source]
+----
+a = 5
+b = "test"
+c = false
+
+//--- All together
+
+a, b, c = 5, "test", false
+----
+
 === Nulls
 
-A *null* is a special value
+A *null* is a special value.
+
+On a boolean condition, a null value is considered as *false*.
 
 === Containers
 
