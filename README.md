@@ -37,6 +37,8 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 [Installation and deployment](deployment/main.adoc)
 
+[Tutorials](tutorial/main.md)
+
 [Core concepts](concepts/main.adoc)
 
 [User guide](user/main.adoc)
