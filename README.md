@@ -47,6 +47,16 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 [Tiq engine](tiq/main.adoc)
 
+## Demo server
+
+There is a demo server [here](https://demo.algotiqa.com:8443/) that you can use to play with the platform. 
+A new account can be created directly from the login page.
+
+Note: Before you point the browser at the demo server, make sure to import the browser certificate located 
+[here](https://github.com/algotiqa/install/raw/refs/heads/main/browser.p12). If you use Chrome, there are
+detailed instructions on how to install the certificate in the [installation manual](deployment/local-installation/main.adoc).
+
+
 ## Current status
 
 The platform is under active development and the implemented features can be seen from the screenshots below.
