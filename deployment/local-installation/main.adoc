@@ -5,8 +5,21 @@
 //=======================================================================================
 
 To run the platform, either `docker` or `podman` needs to be locally installed together with its `compose` package.
+The requirements are below (assuming a single user):
 
-In terms of disk space, make sure to have at least *10GB* of free space for the container images and market data.
+|===
+|Requirement|Minimal|Recommended|Notes
+
+|Memory
+|16GB
+|32GB
+|Initially, the platform can even start with 8GB or less but as soon as more features are used, the platform will start to eat memory
+
+|Disk space
+|30GB
+|100GB
+|The minimum disk space is sized for around 12 markets (data products) and around 30 trading systems
+|===
 
 The local system must be able to resolve the `algotiqa` hostname to `127.0.0.1`. This can be done adding `algotiqa` to the line where `127.0.0.1` is defined in the `hosts` file. The location of this file depends on the system:
 
@@ -59,39 +72,13 @@ image::podman-desktop.png[]
 === Accessing the user interface
 //=======================================================================================
 
-The current platform version requires a client certificate (the `browser.p12` file) to be installed into the browser. Follow the instructions below for your browser.
-
-==== Importing the certificate in Chrome
-
-On Chrome, open the *Settings* page and, on the left menu, select *Privacy and security*. Then, in the middle panel select *Security*, as shown in the image below:
-
-image::chrome-settings.png[]
-
-Now, scroll down to find the *Certificate management* option:
-
-image::chrome-security.png[]
-
-Click that option. In the new page, select *My certificates* on the left menu. You should see a panel like the one below:
-
-image::chrome-certificates.png[]
-
-Click the *Import* button and locate, inside the folder where you unpacked the installer, the *browser.p12* file:
-
-image::chrome-file.png[]
-
-After clicking that file, a dialog will appear asking for the certificate's password: just click the `ok` button (there is no password). If the import operation completes with success, you should see a page similar to the following one:
-
-image::chrome-final.png[]
-
 ==== Configuration
 
 Pointing your browser at `https://algotiqa:8443/`, you should see the login page now.
 
 NOTE: Before registering and accessing the platform, there is a mandatory configuration step to follow. Please. read on.
 
-You need to log in into Keycloak's administration console to generate the communication token between services. Point your browser at `https://algotiqa:8443/auth/` (default administration credentials are `admin` / `admin`). Your browser will ask you the certificate to use: just select the *algotiqa* one (which was imported in the previous step).
-
-image::keycloak-login.png[]
+You need to log in into Keycloak's administration console to generate the communication token between services. Point your browser at `https://algotiqa:8443/auth/` (default administration credentials are `admin` / `admin`).
 
 In the main page, click *Manage realms* on the left menu and then click on the *algotiqa* link in the middle of the page, as shown below:
 
