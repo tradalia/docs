@@ -1,0 +1,28 @@
+= Algotiqa development reference
+Andrea Carboni (andrea.carboni71@gmail.com)
+:toc:
+
+== Environment variables
+
+When importing the projects into your IDE, make sure to override the following variables:
+
+|===
+|Component | Variable | Value
+
+|Gateway
+|ALGO_ROUTES_KEYCLOAK_URL
+|https://keycloak:8448
+
+|Data Collector
+|ALGO_AUTHENTICATION_CLIENTSECRET
+|<get secret from keycloak>
+
+|Inventory Server
+|ALGO_PROVIDER_CURRENCY_APIKEY
+|<your API key>
+
+|Portfolio Trader
+|ALGO_AUTHENTICATION_CLIENTSECRET
+|<get secret from keycloak>
+|===
+

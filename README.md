@@ -47,6 +47,8 @@ Simply stated, the **Algotiqa** platform will try to address all pain points of 
 
 [Tiq engine](tiq/main.adoc)
 
+[Development reference](development/main.adoc)
+
 ## Demo server
 
 There is a demo server [here](https://demo.algotiqa.com:8443/) that you can use to play with the platform. 
